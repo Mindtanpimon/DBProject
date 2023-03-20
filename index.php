@@ -110,7 +110,7 @@ session_start();
             <div class="content">
                 <div class="info">
                   <h4>6410510154</h4>
-                  <h5>พิมพิสา แก้วหณี</h5>
+                  <h5>พิมพิสา แก้วมณี</h5>
                 </div>
             </div>
             <div class="footer">

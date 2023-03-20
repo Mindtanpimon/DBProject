@@ -40,59 +40,44 @@ session_start();
     </header>
   
     </div>
-  <div class="container col-sm-6 mt-5">
-      <div class="row">
-        <div class="col">
-          <thead>
-                <th>
-                  <label class="col-sm-2 col-form-label">Course :</label>
-                </th>
-              </thead>
-              <tbody>
-                <td>
-                  <select id="courseFilter" class="form-control">
-                          <option value="">หลักสูตรทั้งหมด</option>
-                          <option value="MBA">MBA</option>
-                          <option value="MBA.Mk">MBA.Mk</option>
-                          <option value="IMBA">IMBA</option>
-                          <option value="M.Acc">M.Acc</option>
-                          <option value="MPA">MPA</option>
-                          <option value="Ph.D.">Ph.D.</option>
-                        </select>
-                </td>
-              </tbody>
-        </div>
-        <div class="col">
-          <thead>
-                <th>
-                  <label class="col-sm-2 col-form-label">Status :</label>
-                </th>
-              </thead>
-              <tbody>
-                <td>
-                  <select id="statusFilter" class="form-control">
-                      <option value="">สถานะนักศึกษา</option>
-                      <option value="กำลังศึกษา">กำลังศึกษา</option>
-                      <option value="สำเร็จการศึกษา">สำเร็จการศึกษา</option>
-                      <option value="ไม่มาลงทะเบียน">ไม่มาลงทะเบียน</option>
-                   </select>
-                </td>
-              </tbody>
-        </div>
-        
-      </div>
-      <div class="row mt-2">
-        <div class="col">
-                  <label class="col-sm-2 col-form-label">Start :</label>
-                  <input type="text" id="min" name="min" placeholder="Start Date" class="form-control">
-        </div>
-        <div class="col">
-                  <label class="col-sm-2 col-form-label">End :</label>
-                  <input type="text" id="max" name="max" placeholder="End Date" class="form-control">
-        </div>
-      </div>
-  </div>
-</div>
+    <div class="container-filter">
+          <div class="item">
+                    <label>Course :</label>
+                    <select id="courseFilter" class="form-control">
+                            <option value="">หลักสูตรทั้งหมด</option>
+                            <option value="MBA">MBA</option>
+                            <option value="MBA.Mk">MBA.Mk</option>
+                            <option value="IMBA">IMBA</option>
+                            <option value="M.Acc">M.Acc</option>
+                            <option value="MPA">MPA</option>
+                            <option value="Ph.D.">Ph.D.</option>
+                          </select>
+          </div>
+          <div class="item">
+                        <label>Status :</label>
+                        <select id="statusFilter" class="form-control">
+                        <option value="">สถานะนักศึกษา</option>
+                        <option value="กำลังศึกษา">กำลังศึกษา</option>
+                        <option value="สำเร็จการศึกษา">สำเร็จการศึกษา</option>
+                        <option value="ไม่มาลงทะเบียน">ไม่มาลงทะเบียน</option>
+                      </select>
+            </div>
+          <div class="item">
+                        <label>Start :</label>
+                        <div class="input-date">
+                          <input type="text" id="min" name="min" placeholder="Start Date" class="form-control">
+                        </div>
+                        
+          </div>
+          <div class="item">
+                        <label>End :</label>
+                        <div class="input-date">
+                          <input type="text" id="max" name="max" placeholder="End Date" class="form-control">
+                        </div>
+                      </div>
+    </div>
+
+          
 
 <div class="container mt-3">
     <a href="addPublication.php" class="btn btn-success mb-2" style="height:40px">Add Publication</a>
